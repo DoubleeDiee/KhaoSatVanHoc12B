@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát Văn học</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Khảo sát Tác phẩm Văn học</h1>
+            <p>Hãy tham gia khảo sát để giúp chúng tôi thu thập dữ liệu cho bài báo cáo văn học</p>
+        </header>
+        
+        <div id="survey-section">
+            <div class="card">
+                <h2>Thông tin cá nhân</h2>
+                <div class="question">
+                    <label for="name">Họ và tên (tùy chọn):</label>
+                    <input type="text" id="name" class="form-input" placeholder="Nhập họ tên của bạn">
+                </div>
+                <div class="question">
+                    <label for="age">Độ tuổi:</label>
+                    <select id="age" class="form-input">
+                        <option value="">Chọn độ tuổi</option>
+                        <option value="under18">Dưới 18</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-50">36-50</option>
+                        <option value="over50">Trên 50</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Câu hỏi khảo sát</h2>
+                
+                <div class="question">
+                    <p>1. Tác phẩm văn học nào bạn yêu thích nhất?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="truyen-kieu">
+                            <span>Truyện Kiều - Nguyễn Du</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="chi-pheo">
+                            <span>Chí Phèo - Nam Cao</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="vo-nhat">
+                            <span>Vợ nhặt - Kim Lân</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="vo-chong-a-phu">
+                            <span>Vợ chồng A Phủ - Tô Hoài</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>2. Nhân vật văn học nào bạn ấn tượng nhất?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="thuy-kieu">
+                            <span>Thúy Kiều</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="chi-pheo">
+                            <span>Chí Phèo</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="thi-no">
+                            <span>Thị Nở</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="a-phu">
+                            <span>A Phủ</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>3. Bạn thường đọc văn học ở định dạng nào?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="checkbox" name="q3" value="sach-giay">
+                            <span>Sách giấy</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="q3" value="ebook">
+                            <span>Ebook</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="q3" value="audio">
+                            <span>Sách nói (Audio)</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="q3" value="online">
+                            <span>Đọc online</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>4. Theo bạn, yếu tố nào quan trọng nhất trong một tác phẩm văn học?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="cau-truc">
+                            <span>Cấu trúc và kỹ thuật viết</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="nhan-vat">
+                            <span>Nhân vật và tính cách</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="chu-de">
+                            <span>Chủ đề và thông điệp</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="ngon-ngu">
+                            <span>Ngôn ngữ và hình ảnh</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>5. Bạn đánh giá thế nào về tình hình văn học Việt Nam hiện nay?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="rat-tot">
+                            <span>Rất phát triển và đa dạng</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="tot">
+                            <span>Phát triển tốt</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="binh-thuong">
+                            <span>Bình thường</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="can-cai-thien">
+                            <span>Cần cải thiện nhiều</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="submit-survey">Gửi khảo sát</button>
+            </div>
+        </div>
+        
+        <div id="notification" class="notification"></div>
+        
+        <div class="admin-section" id="admin-section">
+            <div class="card">
+                <h2>Khu vực Quản trị</h2>
+                
+                <div class="admin-login" id="admin-login">
+                    <input type="password" id="admin-password" placeholder="Nhập mật khẩu admin">
+                    <button id="login-admin">Đăng nhập</button>
+                </div>
+                
+                <div id="admin-content" style="display: none;">
+                    <h3>Thống kê và Phân tích</h3>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-title">Tổng số người tham gia khảo sát</div>
+                            <div id="total-participants" class="stat-value">0</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Phân bố độ tuổi</div>
+                            <div id="age-distribution" class="chart-container"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Tác phẩm yêu thích nhất</div>
+                            <div id="fav-literature" class="chart-container"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Nhân vật ấn tượng nhất</div>
+                            <div id="fav-character" class="chart-container"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Định dạng đọc sách</div>
+                            <div id="reading-format" class="chart-container"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Yếu tố quan trọng trong tác phẩm</div>
+                            <div id="important-factor" class="chart-container"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-title">Đánh giá văn học Việt Nam</div>
+                            <div id="vietnam-literature" class="chart-container"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-actions">
+                        <button id="export-data">Xuất dữ liệu</button>
+                        <button id="reset-data">Xóa dữ liệu</button>
+                        <button id="logout-admin">Đăng xuất</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Hệ thống Khảo sát Văn học &copy; 2023 - Dự án Báo cáo Văn học</p>
+        </footer>
+    </div>
+
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
